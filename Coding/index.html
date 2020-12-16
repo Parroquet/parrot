@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
 
+  <meta charset="UTF-8">
+  <title>Coding</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="/assets/css/style.css" rel="stylesheet" />
+  <link href="/assets/css/colors-dark.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+
+  <header id="header">
+    <!--h1><a href="/"><i class="icon-sun"></i> Welcome to my page!</a></h1-->
+    <h1><i class="icon-sun"></i>Coding</h1>
+    <p>My main languages are Python and C but I can use basic Perl, HTML, CSS, Javascript and SQL.</p>
+  </header>
+
+
+
+  <div id="page">
+
+
+
+    <div id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="/parrot">Home</a></li>
+          <li><a href="/parrot/SANS">SANS foundation</a></li>
+          <li><a href="/parrot/thm">Tryhackme advent</a></li>
+          <li><a href="/parrot/Hackthebox">Hack The Box</a></li>
+          <li><a href="/parrot/cmds">Useful Linux Commands</a></li>
+          <li><a href="/parrot/Projects">Projects</a></li>
+          <li><a href="/parrot/Networks">Networks/Netkit</a></li>
+          <li><a href="/parrot/os">Operating Systems</a></li>
+          <li><a href="/parrot/math">Discrete Maths</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+    <div id="content">
+        {{content}}
+    </div>
+
+
+
+  </div>
+
+
+
+  <footer id="footer">
+    <p class="copyright">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.name }}. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="http://www.webmaster-source.com">Matt Harzewski</a></p>
+  </footer>
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="/assets/js/jquery.mobilemenu.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
+    });
+  </script>
+
+
+
+</body>
+</html>
